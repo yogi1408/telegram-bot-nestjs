@@ -1,5 +1,7 @@
 import { Injectable, OnModuleInit, Logger } from '@nestjs/common';
 import * as TelegramBot from 'node-telegram-bot-api';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 @Injectable()
 export class BotService implements OnModuleInit {

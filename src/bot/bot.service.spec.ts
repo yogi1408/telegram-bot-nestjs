@@ -1,6 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { BotService } from './bot.service';
 import * as TelegramBot from 'node-telegram-bot-api';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 jest.mock('node-telegram-bot-api');
 
